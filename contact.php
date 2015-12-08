@@ -38,11 +38,11 @@
                     <br><br>
                     Questions/Comments: <span class='required'>*</span><br><textarea name="comments" rows="8" cols="50"></textarea><br><br>
                     <input type="submit" name="submit">
-                </form> 
+                </form>
             </div>
         </div>
 
-        
+
         <!-- footer -->
         <div id="footer">
             <div id="copyright">

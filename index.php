@@ -48,7 +48,7 @@
 
                 <!-- slide overlaye -->
                 <div id="carouselLayer">
-                    
+
                     <!-- slide arrows -->
                     <div id="leftArrow" class="carousel-arrow">
                         <img src="./images/leftArrow_dim.png" alt="left arrow">
@@ -56,7 +56,7 @@
                     <div id="rightArrow" class="carousel-arrow">
                         <img src="./images/rightArrow_dim.png" alt="right arrow">
                     </div>
-                                        
+
                     <!-- slide indicator -->
                     <div id="carouselIndex">
                         <div class="carousel-index-box"><img src="./images/index_oval.png" alt="index"></div>
@@ -72,7 +72,7 @@
             <h1>Welcome to Hong's Gallery</h1>
         </div>
 
-        
+
         <!-- footer -->
         <div id="footer">
             <div id="copyright">
