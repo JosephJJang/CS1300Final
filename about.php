@@ -61,10 +61,6 @@
         </div>
 
         <!-- footer -->
-        <div id="footer">
-            <div id="copyright">
-                &#169; COPYRIGHT 2015, ALL RIGHTS RESERVERD.
-            </div>
-        </div>
+        <?php include 'php/footer.php';?>
     </body>
 </html>
