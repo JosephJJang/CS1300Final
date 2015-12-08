@@ -9,17 +9,7 @@
 
     <body>
         <!-- navbar -->
-        <div id="navbar">
-            <div class="sticky">
-                <div class="container">
-                    <a href="./index.html"><div class="nav-btn"><div class="nav-btn-text">HOME</div></div></a>
-                    <a href="./about.html"><div class="nav-btn"><div class="nav-btn-text">ABOUT</div></div></a>
-                    <a href="./gallery.html"><div class="nav-btn"><div class="nav-btn-text">GALLERY</div></div></a>
-                    <a href="#"><div class="nav-btn nav-btn-active"><div class="nav-btn-text">CONTACT</div></div></a>
-                    <a href="./index.html"><div id="navTitle"><div class="nav-btn-text">Hong's Gallery</div></div></a>
-                </div>
-            </div>
-        </div>
+        <?php include 'php/navbar.php';?>
 
         <!-- content -->
         <div id="content">
