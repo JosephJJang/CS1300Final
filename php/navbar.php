@@ -1,6 +1,6 @@
 <div id="navbar">
     <div class="sticky">
-        <ul class="container">
+        <div class="container">
             <a href="./index.php"><div class="nav-btn"><div class="nav-btn-text">HOME</div></div></a>
             <a href="./about.php"><div class="nav-btn"><div class="nav-btn-text">ABOUT</div></div></a>
             <a href="./gallery.php"><div class="nav-btn"><div class="nav-btn-text">GALLERY</div></div></a>
@@ -10,6 +10,6 @@
               </div>
             <a href="./contact.php"><div class="nav-btn"><div class="nav-btn-text">CONTACT</div></div></a>
             <a href="./index.php"><div id="navTitle"><div class="nav-btn-text">Hong's Gallery</div></div></a>
-        </ul>
+        </div>
     </div>
 </div>

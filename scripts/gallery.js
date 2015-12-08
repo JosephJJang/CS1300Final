@@ -13,15 +13,19 @@ $(document).ready(function() {
     var indice = [1, 2, 3, 4];
     var thumbnails = $('#thumbnails');
 
+    var firstIndex = parseInt($('#sample1 :first-child').attr('src').substring(22,23));
+    var image_index_min = firstIndex == 1 ? 1 : 8;
+    var image_index_max = firstIndex == 1 ? 7 : 20;
+
     var scrollThumbnails = function(direction) {
 
         var deleteImageIndex = direction ? indice[0] : indice[3];
         var newImageIndex = direction ? indice[3] + 1 : indice[0] - 1;
 
-        if (newImageIndex < 1)
-            newImageIndex = 20;
-        if (newImageIndex > 20)
-            newImageIndex = 1;
+        if (newImageIndex < image_index_min)
+            newImageIndex = image_index_max;
+        if (newImageIndex > image_index_max)
+            newImageIndex = image_index_min;
 
         var imageId = "sample" + newImageIndex;
         var imageSrc = "images/gallery/" + imageId + ".jpg";
