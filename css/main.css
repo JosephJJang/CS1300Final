@@ -1,0 +1,524 @@
+/* == Global Resets == */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    
+    font: 400 16px/1.0 "Helvetica Neue", Helvetica, "Open Sans", sans-serif;
+}
+
+a {
+    color: rgb(34,34,37);
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 50px;
+}
+img {
+    max-width: 100%; 
+    max-height: 100%;
+}
+
+
+
+/* == Universal Components == */
+
+#content {
+    width: 100%;
+    min-height: 100%;
+    text-align: center;
+}
+
+.container {
+    display: inline-block;
+    text-align: left;
+
+    width: 100%;
+    height: 100%;
+
+/*    max-width: 1280px;
+*/    min-width: 320px;
+}
+
+.sticky {
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+    box-shadow: inherit;
+    position: fixed;
+    z-index: 999;
+}
+
+
+
+/* == Navigation Bar and Footer == */
+
+/* Navigation Bar */
+#navbar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    color: white;
+    background-color: rgb(34, 37, 34);
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0px 2px 16px -5px rgba(0,0,0,0.9);
+}
+
+/* Navigation Items and Title */
+.nav-btn, #navTitle {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin-right: -5px;
+    width: 150px;
+    height: 100%;
+
+    font-weight: 300;
+    font-size: 19px;
+    text-shadow: 0 1px 1px black;
+}
+
+#navTitle {
+    float: right;
+    display: block;
+    margin: 0px;
+}
+
+.nav-btn-text {
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 20px;
+}
+
+/* Navigation Links */
+#navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover .nav-btn, .nav-btn-active {
+    font-weight: 500;  
+    background-color: rgba(98, 93, 95, 0.9);
+}
+
+a:hover #navTitle {
+    color: rgb(245, 194, 70);
+}
+
+/* Footer Style */
+#footer {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: rgb(233, 234, 232);
+}
+
+#copyright {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
+    font-size: 14px;
+    font-weight: 200;
+    color: rgb(133, 134, 135);
+}
+
+
+
+/* == Home Page Style Goes Here  == */
+
+#bannerSlide {
+    width: 100%;
+    height: 70%;
+    min-height: 400px;
+    max-height: 800px;
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#carouselLayer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 995;
+}
+
+.carousel-arrow {
+    display: none;
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 60px;
+    z-index: 993;
+    cursor: pointer;
+}
+
+#leftArrow {
+    background-size: contain;
+    background-repeat: no-repeat; 
+    left: 20px;
+}
+
+#rightArrow {
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 20px;
+}
+
+#carouselTitle {
+    width: 70%;
+    color: white;
+    text-align: right;
+    position: absolute;
+    bottom: 50px;
+    right: 100px;
+    font-size: 25px;
+    z-index: 999;
+    
+    font-family: "Proxima Nova", "helvetica neue", "helvetica" , "arial" , "sans-serif";
+    font-weight: 400;
+    font-size: 30px;
+    text-shadow: 0 1px 1px black;
+}
+
+#carouselIndex {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 30px;
+    z-index: 998;
+    text-align: center;
+}
+
+.carousel-index-box {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+
+
+/* == About Page Style Goes Here  == */
+
+#biograph {
+    width: 100%;
+    height: 500px;
+    padding: 0;
+    margin: 0;
+
+    background: url("../images/Bio.jpg");
+    background-size:  cover;
+    background-position: left center;
+    background-repeat:  no-repeat;    
+    box-shadow: inset 0px -5px 16px -3px rgba(0,0,0,0.8);
+}
+
+#bioContainer {
+    display: inline-block;
+    width: 100%;
+    max-width: 1960px;
+    text-align: center;
+}
+
+.bio-row {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.bio-row-header {
+    margin: 10px auto;
+    width: 80%;
+    height: 50px;
+    max-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(67, 66, 67);
+    border-bottom: 1px rgb(207, 208, 209) dotted;
+}
+
+.bio-row-body {
+    margin: 50px auto;
+    width: 80%;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.25;
+    color: rgb(94, 95, 96);
+}
+
+.bio-row-body > table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.bio-row-body tr {
+    height: 60px;
+    font-size: 19px;
+}
+
+.table-column-timeline {
+    width: 12%;
+}
+
+span.artwork-title {
+    font-weight: 500;
+}
+
+span.artwork-desciption {
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* == Gallery Page Style Goes Here  == */
+
+
+#mainSection {
+    margin: 50px 0;
+    text-align: center;
+}
+
+#thumbnailSection {
+    width: 90%;
+    display: inline-block;
+    vertical-align: middle;
+    height: 260px;
+    position: relative;
+}
+
+#thumbnails {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.thumbnail {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    height: 200px;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.thumbnail-arrow {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 5px;
+    cursor: pointer;
+
+    width: 50px;
+    height: 230px;
+    position: relative;
+    margin: 0 10px;
+}
+
+#leftThumb {
+    box-shadow: 3px 0px 5px -4px rgba(0,0,0,0.8);
+}
+
+#rightThumb {
+    box-shadow: -3px 0px 5px -4px rgba(0,0,0,0.8);
+}
+
+
+.thumbnail-arrow img {
+    width: 40%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*
+#gridContainer {
+    width: 100%;
+    padding: 30px 0;
+    background-color: rgb(247, 248, 247);
+    text-align: center;
+}
+
+.grid-waterfall-column {
+    width: 320px;
+    margin-right: 5px;
+    
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.grid-image-box {
+    position: relative;
+    margin: 8px 0;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border: 3px solid rgba(39, 37, 37, 0);
+}
+
+.grid-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-image-overlay {
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 996;
+}
+
+.grid-image-overlay-active {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    background-color: rgba(39, 37, 37, 1);
+    z-index: 997;
+}
+
+.grid-image-overlay-active h3 {
+    position: absolute;
+    margin: auto;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: 30px;
+
+    font-size: 22px;
+    font-weight: 300;
+    color: #FEFEFE;
+    text-shadow: 1px 1px #000, -1px -1px #444;
+}
+
+#slideShow {
+    z-index: 1000;
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#slideShow > img {
+    position: absolute;
+    width: auto;
+    height: 80%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#closeBtn {
+    position: absolute;
+    background: url("../images/close.png");
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    right: 15px;
+    top: 15px;
+}
+
+a:hover #closeBtn {
+    background: url("../images/close_highlight.png");
+    background-size: contain;
+}
+*/
+
+/* == Contact Page Style Goes Here  == */
+.required {
+    color: rgb(153, 0, 0);
+}
+
+
+
+
+
+
+
+/* == Media Queries == */
+
+/* Nav and Font Size Change */
+@media (max-width: 750px) {
+    .nav-btn {
+        width: 115px;
+        font-size: 16px;
+    }
+
+    .nav-btn-text {
+        height: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav-btn {
+        width: 60px;
+        font-size: 10px;
+    }
+
+    .nav-btn-text {
+        height: 12px;
+    }
+    
+}
+
+@media (max-width: 390px) {
+    .nav-btn {
+        width: 40px;
+        font-size: 6px;
+    }
+
+    .nav-btn-text {
+        height: 8px;
+    }
+}
