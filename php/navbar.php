@@ -12,4 +12,4 @@
             <a href="./index.php"><div id="navTitle"><div class="nav-btn-text">Hong's Gallery</div></div></a>
         </div>
     </div>
-</div>
+</d
