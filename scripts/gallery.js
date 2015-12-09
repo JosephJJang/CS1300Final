@@ -5,17 +5,20 @@
 *
 */
 
-var LAYER_TRANS_SPEED = 300;    // overlay transition speed
-var IMAGE_COUNT = 20;
+var IMAGE_COUNT = 20;           // total image count
 
 $(document).ready(function() {
 
     var indice = [1, 2, 3, 4];
     var thumbnails = $('#thumbnails');
 
-    var firstIndex = parseInt($('#sample1 :first-child').attr('src').substring(22,23));
+    var firstIndex = parseInt($('#sample1 :first-child').attr('src').substring(21,22));
     var image_index_min = firstIndex == 1 ? 1 : 8;
     var image_index_max = firstIndex == 1 ? 7 : 20;
+
+    /********************************************************************
+    *       scroll function in gallery page
+    ********************************************************************/
 
     var scrollThumbnails = function(direction) {
 
@@ -57,6 +60,7 @@ $(document).ready(function() {
 
     };
 
+    // attach scroll function to arrow images
     $('#leftThumb').click(function() {
         scrollThumbnails(true);
     });
@@ -65,6 +69,7 @@ $(document).ready(function() {
         scrollThumbnails(false);
     });
 
+    // switch the main section image
     var switchMainImage = function() {
         var mainImageUrl = "images/gallery/" + this.id + ".jpg";
         $("#mainSection img").attr('src', mainImageUrl);

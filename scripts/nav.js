@@ -1,4 +1,9 @@
-
+/*
+*
+*   This script manages the dropdown menu
+*   of gallery page in the navbar
+*
+*/
 
 $(document).ready( function(){
 

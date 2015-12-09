@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" lang="zh">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Hong's Gallery</title>
+        <title>洪成华美术馆</title>
         <link href="./css/main.css" rel="stylesheet" type="text/css" />
         <script src="./scripts/lib/jquery-1.11.3.min.js"></script>
         <script src="./scripts/slide.js"></script>
@@ -13,7 +13,7 @@
 
     <body>
         <!-- navbar -->
-        <?php include 'php/navbar.php';?>
+        <?php include 'php/navbar_zh.php';?>
 
         <!-- content -->
         <div id="content" class="container">
@@ -61,11 +61,11 @@
 
             </div>
 
-            <h1>Welcome to Hong's Gallery</h1>
+            <h1>欢迎来到洪成华美术馆</h1>
         </div>
 
         <!-- footer -->
-        <?php include 'php/footer.php';?>
+        <?php include 'php/footer_zh.php';?>
 
     </body>
 </html>

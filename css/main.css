@@ -39,8 +39,7 @@ img {
     width: 100%;
     height: 100%;
 
-/*    max-width: 1280px;
-*/    min-width: 320px;
+    min-width: 400px;
 }
 
 .sticky {
@@ -83,9 +82,21 @@ img {
     text-shadow: 0 1px 1px black;
 }
 
-#navTitle {
-    float: right;
+#nav-right-wrapper {
     display: block;
+    height: 100%;
+    width: 300px;
+    text-align: right;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin: 0px;
+}
+
+#navTitle {
+    display: inline-block;
+    position: relative;
+    width: 60%;
     margin: 0px;
 }
 
@@ -101,6 +112,22 @@ img {
     height: 20px;
 }
 
+.nav-lang {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    height: 100%;
+    width: 30px;    
+    margin: 0px -2px;
+}
+
+.nav-lang .nav-btn-text {
+    text-decoration: underline;
+    font-size: 14px;
+    height: 14px;
+}
+
+
 /* Navigation Links */
 #navbar a {
     color: white;
@@ -112,7 +139,7 @@ a:hover .nav-btn, .nav-btn-active {
     background-color: rgba(98, 93, 95, 0.9);
 }
 
-a:hover #navTitle {
+a:hover #navTitle, a:hover .nav-lang {
     color: rgb(245, 194, 70);
 }
 
@@ -328,10 +355,18 @@ span.artwork-desciption {
 
 /* == Gallery Page Style Goes Here  == */
 
+#titleSection {
+    margin: 20px 0;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 200;
+}
 
 #mainSection {
     margin: 50px 0;
     text-align: center;
+    width: 50%;
+    display: inline-block;
 }
 
 #thumbnailSection {
@@ -387,113 +422,6 @@ span.artwork-desciption {
     margin: auto;
 }
 
-/*
-#gridContainer {
-    width: 100%;
-    padding: 30px 0;
-    background-color: rgb(247, 248, 247);
-    text-align: center;
-}
-
-.grid-waterfall-column {
-    width: 320px;
-    margin-right: 5px;
-
-    display: inline-block;
-    vertical-align: text-top;
-}
-
-.grid-image-box {
-    position: relative;
-    margin: 8px 0;
-    width: 100%;
-    height: auto;
-    cursor: pointer;
-    border: 3px solid rgba(39, 37, 37, 0);
-}
-
-.grid-image-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.grid-image-overlay {
-    width: 100%;
-    height: 0%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 996;
-}
-
-.grid-image-overlay-active {
-    width: 100%;
-    height: 0;
-    position: absolute;
-    display: none;
-    top: 100%;
-    left: 0;
-    background-color: rgba(39, 37, 37, 1);
-    z-index: 997;
-}
-
-.grid-image-overlay-active h3 {
-    position: absolute;
-    margin: auto;
-    padding: 0;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: auto;
-    height: 30px;
-
-    font-size: 22px;
-    font-weight: 300;
-    color: #FEFEFE;
-    text-shadow: 1px 1px #000, -1px -1px #444;
-}
-
-#slideShow {
-    z-index: 1000;
-    display: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-#slideShow > img {
-    position: absolute;
-    width: auto;
-    height: 80%;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-#closeBtn {
-    position: absolute;
-    background: url("../images/close.png");
-    background-size: contain;
-    width: 20px;
-    height: 20px;
-    right: 15px;
-    top: 15px;
-}
-
-a:hover #closeBtn {
-    background: url("../images/close_highlight.png");
-    background-size: contain;
-}
-*/
-
 /* == Contact Page Style Goes Here  == */
 .required {
     color: rgb(153, 0, 0);
@@ -501,14 +429,28 @@ a:hover #closeBtn {
 
 
 
-
-
-
-
 /* == Media Queries == */
 
 /* Nav and Font Size Change */
-@media (max-width: 750px) {
+@media (max-width: 950px) {
+    #thumbnailSection {
+        height: 220px;
+    }
+
+    .thumbnail {
+        width: auto;
+        height: 180px;
+        padding: 0 1px;
+    }
+
+    .thumbnail-arrow {     
+        width: 10px;
+        height: 160px;
+        padding: 0px 15px;
+    }
+}
+
+@media (max-width: 800px) {
     .nav-btn {
         width: 115px;
         font-size: 16px;
@@ -517,27 +459,137 @@ a:hover #closeBtn {
     .nav-btn-text {
         height: 18px;
     }
+
+    #thumbnailSection {
+        height: 220px;
+    }
+
+    .thumbnail {
+        width: auto;
+        height: 140px;
+        padding: 0 1px;
+    }
+
+    .thumbnail-arrow {     
+        width: 10px;
+        height: 120px;
+        padding: 0px 5px;
+    }
+
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .nav-btn {
         width: 60px;
         font-size: 10px;
     }
 
     .nav-btn-text {
-        height: 12px;
+        font-size: 12px;
+    }
+
+    .bio-row-header {
+        font-size: 15px;
+    }
+
+    .bio-row-body {
+        font-size: 15px;
+    }
+
+    .bio-row-body tr {
+        font-size: 14px;
+    }
+
+    span.artwork-desciption {
+        font-size: 12px;
+    }
+
+    #nav-right-wrapper {
+        width: 200px;
+        font-size: 12px;
+    }
+
+    .nav-lang {
+        width: 25px;    
+    }
+
+    .nav-lang .nav-btn-text {
+        font-size: 10px;
+        height: 15px;
+    }
+
+    #thumbnailSection {
+        height: 160px;
+    }
+
+    .thumbnail {
+        height: 80px;
+        padding: 0px 1px;
+    }
+
+    .thumbnail-arrow {
+        width: 7px;
+        height: 70px;
+        padding: 0px 3px;
     }
 
 }
 
-@media (max-width: 390px) {
+
+@media (max-width: 400px) {
     .nav-btn {
-        width: 40px;
+        width: 60px;
         font-size: 6px;
     }
 
     .nav-btn-text {
         height: 8px;
     }
+
+    .bio-row-header {
+        font-size: 13px;
+    }
+
+    .bio-row-body {
+        font-size: 13px;
+    }
+
+    .bio-row-body tr {
+        font-size: 8px;
+    }
+
+    span.artwork-desciption {
+        font-size: 8px;
+    }
+
+    #nav-right-wrapper {
+        width: 150px;
+        font-size: 10px;
+    }
+
+    .nav-lang {
+        width: 18px;    
+    }
+
+    .nav-lang .nav-btn-text {
+        font-size: 8px;
+        height: 8px;
+    }
+
+    #thumbnailSection {
+        height: 160px;
+    }
+
+    .thumbnail {
+        height: 80px;
+        padding: 0px 1px;
+    }
+
+    .thumbnail-arrow {
+        width: 7px;
+        height: 70px;
+        padding: 0px 3px;
+    }
+
+
 }

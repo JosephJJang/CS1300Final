@@ -18,6 +18,10 @@
 
         <!-- content -->
         <div id="content">
+            <div id="titleSection">
+                <p>Collection 1: Wild Hills</p>
+            </div>
+
             <div id="mainSection">
                 <img src="images/gallery/sample1.jpg" alt="Image Large">
             </div>
@@ -34,11 +38,7 @@
         </div>
 
         <!-- footer -->
-        <div id="footer">
-            <div id="copyright">
-                &#169; COPYRIGHT 2015, ALL RIGHTS RESERVERD.
-            </div>
-        </div>
-
+        <?php include 'php/footer.php';?>
+        
     </body>
 </html>
