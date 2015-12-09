@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Hong's Gallery</title>
         <link href="./css/main.css" rel="stylesheet" type="text/css" />
+        <script src="./scripts/lib/jquery-1.11.3.min.js"></script>
+        <script src="./scripts/nav.js"></script>
+
     </head>
 
     <body>

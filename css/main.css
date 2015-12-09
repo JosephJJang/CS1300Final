@@ -101,8 +101,6 @@ img {
     height: 20px;
 }
 
-
-
 /* Navigation Links */
 #navbar a {
     color: white;
@@ -118,7 +116,24 @@ a:hover #navTitle {
     color: rgb(245, 194, 70);
 }
 
+#sub-menu {
+    position: absolute;
+    height: 200%;
+    background: rgba(98, 93, 95, 0.9);
+    display: none;
+    box-shadow: 0px 2px 16px -5px rgba(0,0,0,0.9);
+}
 
+.submenu-btn {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+a:hover .submenu-btn {
+    background-color: rgba(38, 33, 35, 0.9);
+}
 
 /* Footer Style */
 #footer {

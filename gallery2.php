@@ -7,6 +7,7 @@
         <link href="./css/main.css" rel="stylesheet" type="text/css" />
         <script src="./scripts/lib/jquery-1.11.3.min.js"></script>
         <script src="./scripts/gallery.js"></script>
+        <script src="./scripts/nav.js"></script>
 
     </head>
 
@@ -17,7 +18,7 @@
         <!-- content -->
         <div id="content">
             <div id="mainSection">
-                <img src="images/gallery/sample1.jpg" alt="Image Large">
+                <img src="images/gallery/sample9.jpg" alt="Image Large">
             </div>
             <div id="thumbnailSection">
                 <div id="leftThumb" class="thumbnail-arrow"><img id="leftArrow" src="images/leftArrow_dim.png" alt="Image Arrow"/></div>

@@ -7,6 +7,8 @@
         <link href="./css/main.css" rel="stylesheet" type="text/css" />
         <script src="./scripts/lib/jquery-1.11.3.min.js"></script>
         <script src="./scripts/gallery.js"></script>
+        <script src="./scripts/nav.js"></script>
+
 
     </head>
 
